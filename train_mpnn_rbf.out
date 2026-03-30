@@ -1,0 +1,61 @@
+Starting training...
+step      0 | loss = 6.850544
+step    100 | loss = 7.377999
+step    200 | loss = 7.399920
+step    300 | loss = 6.678891
+step    400 | loss = 7.530406
+epoch    0 | train_loss = 7.004515 | val_loss = 6.692232
+step    500 | loss = 7.072362
+step    600 | loss = 6.380718
+step    700 | loss = 7.068859
+step    800 | loss = 7.409276
+step    900 | loss = 6.728999
+epoch    1 | train_loss = 7.179526 | val_loss = 6.193791
+step   1000 | loss = 6.522712
+step   1100 | loss = 12.487676
+step   1200 | loss = 5.929478
+step   1300 | loss = 6.063504
+step   1400 | loss = 6.269409
+epoch    2 | train_loss = 6.002473 | val_loss = 5.599386
+step   1500 | loss = 6.756832
+step   1600 | loss = 6.421217
+step   1700 | loss = 5.853381
+step   1800 | loss = 6.265396
+step   1900 | loss = 5.606538
+epoch    3 | train_loss = 4.664051 | val_loss = 6.058338
+step   2000 | loss = 6.409276
+step   2100 | loss = 6.340745
+step   2200 | loss = 4.667227
+step   2300 | loss = 5.023146
+step   2400 | loss = 6.174118
+epoch    4 | train_loss = 5.803112 | val_loss = 4.777002
+step   2500 | loss = 4.673156
+step   2600 | loss = 4.910411
+step   2700 | loss = 7.059010
+step   2800 | loss = 3.642888
+step   2900 | loss = 3.308884
+epoch    5 | train_loss = 4.986559 | val_loss = 4.691360
+step   3000 | loss = 4.934682
+step   3100 | loss = 5.045462
+step   3200 | loss = 4.661077
+step   3300 | loss = 3.683846
+step   3400 | loss = 4.014618
+epoch    6 | train_loss = 4.476338 | val_loss = 4.995623
+step   3500 | loss = 4.919687
+step   3600 | loss = 3.581197
+step   3700 | loss = 4.368067
+step   3800 | loss = 5.965864
+step   3900 | loss = 3.201717
+epoch    7 | train_loss = 3.967174 | val_loss = 4.066950
+step   4000 | loss = 3.981895
+step   4100 | loss = 5.165400
+step   4200 | loss = 3.414590
+step   4300 | loss = 3.002640
+step   4400 | loss = 3.734733
+epoch    8 | train_loss = 4.216667 | val_loss = 4.106654
+step   4500 | loss = 5.267377
+step   4600 | loss = 3.017685
+step   4700 | loss = 4.240308
+step   4800 | loss = 3.775176
+step   4900 | loss = 2.825807
+epoch    9 | train_loss = 2.632222 | val_loss = 4.693454

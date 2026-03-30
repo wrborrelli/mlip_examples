@@ -112,3 +112,33 @@ def loss_fn(E_pred, E_ref, F_pred, F_ref, force_weight=10):
     loss += force_weight * (F_pred - F_ref).pow(2).mean()
 
     return loss
+
+def evaluate(model, loader, cutoff, cell):
+    model.eval()
+
+    for p in model.parameters():
+        p.requires_grad_(False)
+
+    total_loss = 0.0
+    n = 0
+
+    for R, Z, E_ref, F_ref in loader:
+        R = R.squeeze(0)
+        Z = Z.squeeze(0)
+        E_ref = E_ref.squeeze(0)
+        F_ref = F_ref.squeeze(0)
+
+        i, j = neighbor_list(R, cutoff, cell)
+
+        E_pred, F_pred = energy_forces(model, R, Z, i, j)
+
+        loss = loss_fn(E_pred, E_ref, F_pred, F_ref)
+
+        total_loss += loss.item()
+        n += 1
+
+    for p in model.parameters():
+        p.requires_grad_(True)
+
+    model.train()
+    return total_loss / n
